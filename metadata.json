@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Eterna - Child Drawing Analysis",
+  "description": "An AI-powered platform to analyze children's drawings based on psychological development principles.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,41 @@
+/* GLOBAL STYLES */
+
+/* Manual replacement for @layer base styles since we are using CDN */
+input,
+select,
+textarea {
+  background-color: white;
+  color: black;
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 0.5rem; /* rounded-lg */
+  padding: 0.625rem 0.75rem; /* px-3 py-2.5 */
+  font-family: 'Inter', sans-serif;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: #366824; /* eterna-primary */
+  /* Ring simulation */
+  box-shadow: 0 0 0 2px rgba(54, 104, 36, 0.15); /* ring-eterna-primary/15 */
+}
+
+/* Custom Scrollbar for nicer UI */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f6f0ea;
+}
+::-webkit-scrollbar-thumb {
+  background: #bb8585;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #366824;
+}
